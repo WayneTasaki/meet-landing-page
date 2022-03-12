@@ -22,6 +22,8 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+header img {
   margin-top: 5rem;
   margin-bottom: 3.925rem;
 }
@@ -33,6 +35,7 @@ header {
 .hero-section {
   display: flex;
   justify-content: space-between;
+  margin-bottom: 8.313rem;
 }
 
 .hero-section img {
@@ -115,18 +118,17 @@ h1 {
   margin-top: 3.438rem;
 }
 
-.section-graphic {
-  margin-top: 3rem;
-}
 
-.section-graphic{
+/* ~~~~~~~~~~~~~~~~~~~ */
+/*  SECTION GRAPHIC 01 */
+/* ~~~~~~~~~~~~~~~~~~~ */
+
+.section-graphic {
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-top: 8.313rem;
 }
-
 .circle {
   border: 1px solid rgba(135, 135, 157, 0.25);
   border-radius: 50%;
@@ -138,9 +140,91 @@ h1 {
   font-size: 1rem;
   font-weight: 900;
   color: var(--gray);
+  background-color: var(--white);
 }
 .line {
   border-left: 1px solid rgba(135, 135, 157, 0.25);
   height: 5.25rem;
-  
+}
+
+
+/* ~~~~~~~~~~~~~ */
+/*  MID SECTION  */
+/* ~~~~~~~~~~~~~ */
+
+.mid-section {
+  display: flex;
+  flex-direction: column;
+  margin-bottom: 4.5rem;
+}
+.img-wrapper {
+  margin: 4rem 10.313rem 5rem 10.313rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 2.083vw;
+}
+.img-wrapper img {
+  max-width: 255px;
+  min-width: 164px;
+}
+
+.mid-text-wrapper {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+h3 {
+  font-weight: 900;
+  font-size: 1rem;
+  line-height: 1.62;
+  letter-spacing: 0.25rem;
+  text-transform: uppercase;
+  color: var(--blue);
+}
+
+h2 {
+  color: var(--black);
+  font-size: 2.5rem;
+  font-weight: 900;
+  line-height: 1.1;
+  max-width: 445px;
+  text-align: center;
+  margin-top: 1rem;
+}
+
+.mid-section .text {
+  max-width: 540px;
+  min-width: 327px;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.44;
+  padding: 1rem;
+  margin-bottom: 0;
+}
+
+/* ~~~~~~~~~~~~~~~~~~~ */
+/*  SECTION GRAPHIC 01 */
+/* ~~~~~~~~~~~~~~~~~~~ */
+
+.mid {
+  /* padding-bottom: -1.8rem; */
+}
+
+
+/* ~~~~~~~~~~~~~~~ */
+/*  FOOTER SECTION */
+/* ~~~~~~~~~~~~~~~ */
+
+.footer-section {
+  background-color: var(--blue);
+  /* padding: 7.25rem 10.313rem 6.5rem 10.313rem; */
+  position: absolute;
+  bottom: 0;
+}
+
+.footer-text-wrapper {
+  display: flex;
 }
