@@ -7,9 +7,11 @@
 
 :root {
   --blue: #4D96A9;
-  --active-blue: #8FE3F9;
+  --light-blue: #8FE3F9;
+  --active-blue: #71C0D4;
   --purple: #855FB1;
-  --active-purple: #D9B8FF;
+  --light-purple: #D9B8FF;
+  --active-purple: #B18BDD;
   --white: #FAFAFA;
   --gray: #87879D;
   --black: #28283D;
@@ -20,16 +22,125 @@ header {
   display: flex;
   justify-content: center;
   align-items: center;
-  margin-top: 3rem;
-  margin-bottom: 3.488rem;
+  margin-top: 5rem;
+  margin-bottom: 3.925rem;
 }
 
-.hero-image-wrapper {
+/* ~~~~~~~~~~~~~~ */
+/*  HERO SECTION  */
+/* ~~~~~~~~~~~~~~ */
+
+.hero-section {
   display: flex;
-  flex-direction: row;
+  justify-content: space-between;
 }
 
 .hero-section img {
-  margin-right: 1rem;
-  max-width: 394px;
+  min-width: 394px;
+  height: 303px;
+}
+
+.hero-left {
+  float: left !important;
+  position:relative;
+  margin-left: -2.5% !important;
+}
+
+.hero-right {
+  float: right;
+  position: relative;
+  margin-right: -2.0%;
+  top: 50px;
+}
+
+.hero-text-wrapper {
+  /* background-color: antiquewhite; */
+  text-align: center;
+  max-width: 539px;
+  padding-top: 3rem;
+}
+
+h1 {
+  font-size: 4rem;
+  font-weight: 900;
+  color: var(--black);
+  text-align: center;
+  /* background-color: pink; */
+  max-width: 445px;
+  margin-left: auto;
+  margin-right: auto;
+  line-height: 1;
+}
+
+.text {
+  font-size: 1.125rem;
+  line-height: 1.44;
+  color: var(--gray);
+  /* background-color: aquamarine; */
+  margin: 2.125rem 2rem 3rem 2rem;
+  /* margin-top: 2.125rem; */
+}
+
+.button {
+  background-color: var(--blue);
+  font-size: 1rem;
+  padding: 1em 2.5em;
+  border-radius: 1.813rem;
+  text-decoration: none;
+  font-weight: 900;
+  color: white;
+  cursor: pointer;
+}
+.button span {
+  color: var(--light-blue);
+  margin-left: 0.25rem;
+}
+
+.one:hover {
+  background-color: var(--active-blue);
+  transition-duration: 0.3s;
+}
+.two {
+  padding-left: 1.813rem;
+  padding-right: 1.813rem;
+  margin-left: 1rem;
+  background-color: var(--purple);
+}
+.two:hover {
+  background-color: var(--active-purple);
+  transition-duration: 0.3s;
+}
+.one, .two {
+  margin-bottom: 1.438rem;
+  margin-top: 3.438rem;
+}
+
+.section-graphic {
+  margin-top: 3rem;
+}
+
+.section-graphic{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin-top: 8.313rem;
+}
+
+.circle {
+  border: 1px solid rgba(135, 135, 157, 0.25);
+  border-radius: 50%;
+  width: 3.5rem;
+  height: 3.5rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1rem;
+  font-weight: 900;
+  color: var(--gray);
+}
+.line {
+  border-left: 1px solid rgba(135, 135, 157, 0.25);
+  height: 5.25rem;
+  
 }
