@@ -366,7 +366,7 @@ h2 {
   }
   .footer-heading {
     text-align: center;
-    line-height: 1.1;
+    line-height: 1.12;
     width: 457px;
     margin-top: 5.75rem;
   }
@@ -388,9 +388,11 @@ h2 {
   }
   .hero-section-mobile {
     width: 100%;
+    overflow: hidden;
   }
   .text {
     margin-left: 0;
+    margin-right: 0;
   }
   .single-hero {
     display: flex;
@@ -420,5 +422,75 @@ h2 {
   }
   .mid-text-wrapper {
     margin-top: 4rem;
+    min-width: 327px;
+    margin-left: 2rem;
+    margin-right: 2rem;
+  }
+}
+
+
+@media (max-width: 551px){
+  h1 {
+    font-size: 2.5rem;
+  }
+  .hero-text-wrapper-mobile {
+    margin: 3rem 1.5rem 2rem 1.5rem;
+    padding: 0;
+  }
+  .text {
+    font-size: 1rem;
+    margin-top: 1.5rem;
+    min-width: 327px;
+  }
+  .hero-section-mobile .text {
+    margin-top: 1.5rem;
+  }
+  .img-wrapper {
+    margin: 1rem 1rem 0 1rem;
+  }
+  .img-wrapper img {
+    max-width: 151px;
+    min-width: 143px;
+  }
+  .button-wrapper-mobile {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .two {
+    margin-left: 0;
+    margin-top: 1rem;
+  }
+  .section-graphic {
+    margin-top: 4rem;
+  }
+  h2 {
+    font-size: 2rem;
+    margin-top: 1.5rem;
+    line-height: 1.12;
+  }
+  .mid-text-wrapper {
+    margin-left: 1.5rem;
+    margin-right: 1.5rem;
+  }
+  .mid-section .text {
+    font-size: 1.1rem;
+  }
+  .footer-section {
+    background: linear-gradient(
+      rgba(77, 150, 169, .85), 
+      rgba(77, 150, 169, .85)
+    ),url(assets/mobile/image-footer.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 350px;
+    display: flex;
+    justify-content: center;
+  }
+  .footer-text {
+    min-width: 327px;
+    margin: 1.5rem 1.5rem 0 1.5rem;
   }
 }
