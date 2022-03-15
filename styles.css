@@ -136,10 +136,6 @@ h1 {
   background-color: var(--active-purple);
   transition-duration: 0.3s;
 }
-.one, .two {
-  /* margin-bottom: 1.438rem;
-  margin-top: 3.438rem; */
-}
 
 /* ~~~~~~~~~~~~~~~~ */
 /*  Button Wrapper  */
